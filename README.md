@@ -1,4 +1,4 @@
-# Log-Analysis-Lab
+# Log-Analysis-System-Lab
 
 ## Objective
 
