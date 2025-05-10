@@ -24,10 +24,11 @@ Simulate the log analysis process using Windows Event Viewer on a Windows 10 LTS
 #### Enable audit login failure (System Audit Policy was Changed)
 This is the first step that can be taken when the Event ID/Log does not appear in the Event Viewer or recent activity is not detected. <br>
 => The steps:
-- Run the command: secpol.msc
-  
+- Run the command: secpol.msc <br>
+  <img src="images/0.1.png" alt="Scan Result" width="450"/>
 - Go to Local Policies > Audit Policy > Audit Logon Events > Check 'Success' and 'Failure'
 - Event ID 4719 appears in the Event Viewer log. <br>
+  <img src="images/7.png" alt="Scan Result" width="450"/> <br>
 
 Note: Event id 4719 arose due to a change in audit policy on logon/logoff.
 
@@ -52,5 +53,11 @@ Because Event ID 4625 is the Security ID for login failure information. <br>
 
 The account that failed to log in was 'pedahogirl321'. From the failure information, it appears that the username or password is incorrect. This can be indicated as a brute-force attack, because there were attempts to enter the password more than 2 times at the same time. Usually, if the admin enters the wrong password it is only 1 or 2 times.
 
-## Conclusion
+#### Simulation 2:
+=> The steps:
+=> The results: <br>
+=> The analysis: <br>
+jangan lupa tambahin note atau keterangan ttg event id nya !!!!
 
+## Conclusion
+ini kesimpulan dari semuanya
