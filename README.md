@@ -21,22 +21,36 @@ Simulate the log analysis process using Windows Event Viewer on a Windows 10 LTS
 
 ## Steps
 
-1. Specify the internal network target: 192.168.56.0/24 (Host-Only Network)
-2. Run the command: nmap -sV -O 192.168.56.0/24 <br>
-Explanation: <br>
-• -sV: service version detection <br>
-• -O: operating system detection
+#### Enable audit login failure (System Audit Policy was Changed)
+This is the first step that can be taken when the Event ID/Log does not appear in the Event Viewer or recent activity is not detected. <br>
+=> The steps:
+- Run the command: secpol.msc
+  
+- Go to Local Policies > Audit Policy > Audit Logon Events > Check 'Success' and 'Failure'
+- Event ID 4719 appears in the Event Viewer log. <br>
 
-### Results and Analysis
+Note: Event id 4719 arose due to a change in audit policy on logon/logoff.
 
-<i>Img 1: Ubuntu </i> <br>
-<img src="images/nmap1.png" alt="Scan Result" width="500"/>
+#### Simulation 1: Simulated brute-force login (Failed Logon)
+=> The steps:
+- Running the command: for /l %i in (1,1,5) do runas /user:pedahogirl321 cmd
+- Entering an arbitrary password 5 times
+- Check the log in Event Viewer with Event ID 4625 <br>
 
-<i>Img 2: Metasploitable2 </i> <br>
-<img src="images/nmap2.png" alt="Scan Result" width="500"/>
+Why event id 4625? <br>
+Because Event ID 4625 is the Security ID for login failure information. <br>
 
-Nmap completed. 3 hosts were active on the internal network and detected in 26.50 seconds.
+=> The results: <br>
+<img src="images/1.png" alt="Scan Result" width="450"/>
+<img src="images/2.png" alt="Scan Result" width="450"/> <br>
+
+=> The analysis: <br>
+- Timestamp: 2025-05-07 20:15
+- Event ID: 4625
+- Log type: 2 (Security)
+- Description: Login failure of user 'pedahogirl321'. Indication of brute-force attempt. <br>
+
+The account that failed to log in was 'pedahogirl321'. From the failure information, it appears that the username or password is incorrect. This can be indicated as a brute-force attack, because there were attempts to enter the password more than 2 times at the same time. Usually, if the admin enters the wrong password it is only 1 or 2 times.
 
 ## Conclusion
-
 
