@@ -35,9 +35,6 @@ Explanation: <br>
 <i>Img 2: Metasploitable2 </i> <br>
 <img src="images/nmap2.png" alt="Scan Result" width="500"/>
 
-<i>Img 3: Kali Linux </i> <br>
-<img src="images/nmap3.png" alt="Scan Result" width="500"/> <br>
-
 Nmap completed. 3 hosts were active on the internal network and detected in 26.50 seconds.
 
 ## Conclusion
