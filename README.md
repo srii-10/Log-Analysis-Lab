@@ -43,7 +43,7 @@ Because Event ID 4625 is the Security ID for login failure information. <br>
 
 => The results: <br>
 <img src="images/1.png" alt="Scan Result" width="450"/>
-<img src="images/2.png" alt="Scan Result" width="450"/> <br>
+<img src="images/2.png" alt="Scan Result" width="350"/> <br>
 
 => The analysis: <br>
 - Timestamp: 2025-05-07 20:15
@@ -79,7 +79,7 @@ Note: Typically used by system admins for operations with authorized/legal acces
 
 => The results: <br>
 <img src="images/5.png" alt="Scan Result" width="450"/>
-<img src="images/6a.png" alt="Scan Result" width="450"/> <br>
+<img src="images/6a.png" alt="Scan Result" width="350"/> <br>
 
 => The analysis: <br>
 - Timestamp: 2025-05-07 14:11
