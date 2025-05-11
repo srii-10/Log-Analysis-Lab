@@ -1,4 +1,4 @@
-# Log-Analysis-System-Lab
+# Log Analysis System Lab
 
 Log Analysis ang Detect Suspicious Activity
 
