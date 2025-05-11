@@ -1,6 +1,6 @@
 # Log Analysis System Lab
 
-Log Analysis ang Detect Suspicious Activity
+Log Analysis and Detect Suspicious Activity
 
 ## Objective
 
