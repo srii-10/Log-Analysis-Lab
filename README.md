@@ -1,5 +1,7 @@
 # Log-Analysis-System-Lab
 
+Log Analysis ang Detect Suspicious Activity
+
 ## Objective
 
 Simulate the log analysis process using Windows Event Viewer on a Windows 10 LTSC VM performed in Oracle VirtualBox to detect suspicious activities such as failed logins, administrator account usage, folder/file access with active auditing, and changes to audit policies.
