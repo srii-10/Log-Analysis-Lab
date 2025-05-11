@@ -79,7 +79,7 @@ Note: Typically used by system admins for operations with authorized/legal acces
 
 => The results: <br>
 <img src="images/5.png" alt="Scan Result" width="450"/>
-<img src="images/6.png" alt="Scan Result" width="450"/> <br>
+<img src="images/6a.png" alt="Scan Result" width="450"/> <br>
 
 => The analysis: <br>
 - Timestamp: 2025-05-07 14:11
